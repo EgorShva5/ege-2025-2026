@@ -1,4 +1,4 @@
-def to_3(n):
+'''def to_3(n):
     all_nums = '0123456789'
     
     final_num = ''
@@ -36,3 +36,4 @@ for n in range(1, 1000):
         res = r
         
 print(res)
+'''
