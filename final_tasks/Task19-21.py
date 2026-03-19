@@ -1,4 +1,18 @@
-def f(s,n):
+'''
+def f(s1,s2,n):
+    if s1+s2 >= 211: return n % 2 == 0
+    if n == 0: return 0
+    
+    table = [f(s1+1,s2,n-1),f(s1*2,s2,n-1),f(s1,s2+1,n-1),f(s1,s2*2,n-1)]
+    
+    return all(table) if n%2==0 else any(table)
+
+print('19', [i for i in range(1,193) if f(17,i,2)])
+print('20', [i for i in range(1,193) if not f(17,i,1) and f(17,i,3)])
+print('21', [i for i in range(1,193) if not f(17,i,2) and f(17,i,4)])
+'''
+
+'''def f(s,n):
     if s >= 125: return n%2==0
     if n == 0: return 0
     
@@ -9,3 +23,4 @@ def f(s,n):
 print('19', [i for i in range(1,125) if f(i,2)])
 print('20', [i for i in range(1,125) if not f(i,1) and f(i,3)])
 print('21', [i for i in range(1,125) if not f(i,2) and f(i,4)])
+'''
