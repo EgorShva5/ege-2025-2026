@@ -1,3 +1,4 @@
+'''
 n, m = map(int, input().split())
 
 graph = [[] for i in range(n + 1)]
@@ -14,8 +15,7 @@ for city in range(1, n + 1):
             min_dist[city] = w
 
 print(max(min_dist[1:]))
-
-
+'''
 
 '''
 a, b = map(int, input().split())
