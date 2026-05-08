@@ -1,3 +1,27 @@
+#27313, Answer - 23570
+def f(n,k,ft_ts):
+    if n > k or n == 20 or n == 33: return 0
+    if n == k and ft_ts: return 1
+    
+    if n == 15 or n == 26:
+        ft_ts = True
+        
+    return f(n+3,k, ft_ts) + f(n+4, k, ft_ts) + f(n*2, k, ft_ts)
+
+print(f(3,63,False))
+
+#27776, Answer - 60 
+'''
+def f(n,k):
+    if n < k: return 0
+    
+    if n == k: return 1
+    
+    return f(n-1,k) + f(n//2,k)
+
+print(f(40,16)*f(16,6))
+'''    
+
 '''
 № 25360 ЕГКР 13.12.25 (Уровень: Базовый)
 

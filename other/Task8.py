@@ -11,9 +11,6 @@ for i in range(2,b):
             j += i
 
 print(c)
-        
-        
-    
 
 '''import math
 
@@ -328,7 +325,6 @@ path.reverse()
 print(dp[N])
 print(*path)
 '''
-
 
 '''n = int(input())
 a = list(map(int, input().split()))

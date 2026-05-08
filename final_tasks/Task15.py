@@ -1,4 +1,5 @@
-'''p = list(range(66,67+1))
+'''
+p = list(range(66,67+1))
 o = list(range(32,125+1))
 t = list(range(30,491+1))
 

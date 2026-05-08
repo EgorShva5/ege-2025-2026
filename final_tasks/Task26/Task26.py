@@ -21,5 +21,3 @@ for st,end in t_p:
             break
         
 print(cnt_cl, max(profit))            
-            
-    
