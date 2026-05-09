@@ -1,5 +1,3 @@
-
-
 '''
 def get_primes(n):
     a = [True] * (n+1)
