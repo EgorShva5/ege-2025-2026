@@ -1,5 +1,14 @@
 from ipaddress import *
 
+net = ip_network('236.219.208.0/255.255.240.0', 0)
+
+cnt = 0
+for i in net.hosts():
+    bin_adress = bin(int(i))[2:]
+    if bin_adress.count('1') % 6 != 0:
+        cnt += 1
+print(cnt)
+
 '''
 mask = '255.255.192.0'.split('.')
 mask_str = ''.join(mask)

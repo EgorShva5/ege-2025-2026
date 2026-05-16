@@ -1,4 +1,18 @@
 '''
+def check_a(a):
+    for x in range(100_000): 
+        if not (x&51==0 or (x&a!=0 or x&25!=0)):
+            return 0
+    return 1
+
+for a in range(1_000_000):
+    print(a, check_a(a))
+    if check_a(a):
+        print(a)
+        break
+'''
+
+'''
 p = list(range(66,67+1))
 o = list(range(32,125+1))
 t = list(range(30,491+1))
