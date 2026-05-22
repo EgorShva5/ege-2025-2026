@@ -1,5 +1,44 @@
 from ipaddress import *
 
+#№ 25141 (Уровень: Средний)
+'''
+net = ip_network('46.29.170.214/255.255.128.0',0)
+
+maxi = 0
+for i in net.hosts():
+    okts = tuple(map(int, str(i).split('.')))
+    for b in okts:
+        if b == sum(okts) - b:
+            maxi = str(i).replace('.','')
+            break
+
+print(maxi)'''
+
+#№ 27768 Апробация 04.03.26 (Уровень: Базовый)
+'''
+net = ip_network('172.16.160.0/255.255.240.0',0)
+
+cnt = 0
+for i in net.hosts():
+    text = bin(int(i))[2:]
+    
+    if text.count('1') % 2 == 0:
+        cnt+=1
+    
+print(cnt)'''
+
+'''
+№ 29345 Открытый вариант 2026 (Уровень: Базовый)
+net = ip_network('68.203.243.87/255.255.224.0',0)
+
+print(sum(map(int,str(net[-2]).split('.'))))'''
+
+'''№ 29966 Апробация 14.05.26 (Уровень: Базовый)
+net = ip_network('146.180.173.153/255.192.0.0', 0)
+
+print(net[-2])'''
+
+'''
 net = ip_network('236.219.208.0/255.255.240.0', 0)
 
 cnt = 0
@@ -7,7 +46,7 @@ for i in net.hosts():
     bin_adress = bin(int(i))[2:]
     if bin_adress.count('1') % 6 != 0:
         cnt += 1
-print(cnt)
+print(cnt)'''
 
 '''
 mask = '255.255.192.0'.split('.')
