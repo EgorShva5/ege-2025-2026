@@ -15,7 +15,42 @@ def convert_to(number, base, upper=False):
 
 #Функция перевода в 10 систему счисления - int(число, система счисления)
 
-vir = 6*27**9+63*81**8+7*3**8+2*27**7-3*9**7-2000
+cnt = 0
+def to_36(n):
+    global cnt
+    alf = '0123456789abcdefghijklmnopqrstuvwxyz' 
+    res = ''
+    while n>0:
+        if (n%36)%2==0:cnt+=1
+        n//=36
+    
+    return res
+
+nn = 5*1296**2021-4*216**2022+3*36**2023-2*6**2024-2025
+
+to_36(nn)
+print(cnt)
+
+#№ 29968 Апробация 14.05.26 (Уровень: Базовый)
+
+'''
+def to_11(n):
+    alf = '0123456789abcdefghjkl'
+    chis=''
+    while n > 0:
+        chis = alf[n%11] + chis
+        n //= 11
+    
+    return chis
+
+for x in range(3_000,1,-1):
+    a =  9*11**210+8*11**150-x
+    if to_11(a).count('0') == 60:
+        print(x)
+        break
+'''
+         
+'''vir = 6*27**9+63*81**8+7*3**8+2*27**7-3*9**7-2000
 
 def to_9(n):
     als = '0123456789'
@@ -27,7 +62,7 @@ def to_9(n):
     return chis
 
 print(to_9(vir).count('0'), to_9(vir), convert_to(vir,9))
-
+'''
 
 '''
 № 27298 (Уровень: Средний)
@@ -74,6 +109,7 @@ for i in '0123456789ABCDEFGHI':
 Ответ: 24
 '''
 
+'''
 for p in range(11, 36):
     s1 = int('29A1', p)
     s2 = int('47771', p)
@@ -81,7 +117,7 @@ for p in range(11, 36):
     
     if 1_000_001 < s1+s2+s3 < 1_500_000:
         print(p)
-
+'''
 '''
 № 25353 ЕГКР 13.12.25 (Уровень: Базовый)
 
