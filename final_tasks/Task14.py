@@ -15,7 +15,33 @@ def convert_to(number, base, upper=False):
 
 #Функция перевода в 10 систему счисления - int(число, система счисления)
 
-cnt = 0
+
+
+'''mini = float('inf')
+for x in '012345678':
+    for y in '012345678':
+        vir = int(f'2{y}66{x}',9)+int(f'{x}0{y}1',12)
+        if vir % 170 == 0:
+            mini=min(mini, vir)
+print(mini//170)'''
+
+
+'''
+import string
+
+vir = 9**18+3**54-9
+
+def to_3(n):
+    alf='0123456789'+string.ascii_lowercase
+    res = ''
+    while n>0:
+        res = alf[n%3] + res
+        n//=3
+    return res
+
+print(to_3(vir).count('2'))  '''
+
+'''cnt = 0
 def to_36(n):
     global cnt
     alf = '0123456789abcdefghijklmnopqrstuvwxyz' 
@@ -29,7 +55,7 @@ def to_36(n):
 nn = 5*1296**2021-4*216**2022+3*36**2023-2*6**2024-2025
 
 to_36(nn)
-print(cnt)
+print(cnt)'''
 
 #№ 29968 Апробация 14.05.26 (Уровень: Базовый)
 

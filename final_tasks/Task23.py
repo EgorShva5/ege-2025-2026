@@ -1,5 +1,16 @@
+#№ 28942 ЕГКР 18.04.26 (Уровень: Базовый)
+'''
+def f(st,end):
+    if st < end or st == 73: return 0
+    if st == end: return 1
+    
+    return f(st-3,end)+f(st-8,end)+f(st//2,end)
+
+print(f(76,41)*f(41,12))
+'''
+
 #27313, Answer - 23570
-def f(n,k,ft_ts):
+'''def f(n,k,ft_ts):
     if n > k or n == 20 or n == 33: return 0
     if n == k and ft_ts: return 1
     
@@ -8,7 +19,7 @@ def f(n,k,ft_ts):
         
     return f(n+3,k, ft_ts) + f(n+4, k, ft_ts) + f(n*2, k, ft_ts)
 
-print(f(3,63,False))
+print(f(3,63,False))'''
 
 #27776, Answer - 60 
 '''

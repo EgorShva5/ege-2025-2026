@@ -1,3 +1,61 @@
+#№ 29929 (Уровень: Средний)
+def get_primes(n):
+    a = [True] * (n+1)
+    a[0] = False
+    a[1] = False
+    
+    for i in range(2, n):
+        if a[i]:
+            for j in range(i*i, n+1, i):
+                a[j] = False
+    
+    final_list = [b for b in range(1,n+1) if a[b]]
+    return final_list
+
+pr = get_primes(5_000)
+n = -1
+while True:
+    if pr[n]*pr[n-1] > 
+print()
+
+#№ 29932 (Уровень: Базовый)
+'''def get_dels(n):
+    for i in range(2,n):
+        if n % i == 0:
+            if sum([int(digit) for digit in str(i)]) == 13:
+                print(n, i)
+                return True
+    return False
+
+n = 700_001
+cnt = 0
+while cnt < 5:
+    if get_dels(n):
+        cnt += 1
+    n += 1'''
+
+#№ 29938 (Уровень: Базовый)
+'''st_five = dict([(5**i, i) for i in range(1,20)])
+
+def check_n(n):
+    str_n = str(n)
+    m = 2
+    while 197*m < n:
+        ost = n-197*m
+        if ost in st_five.keys():
+            if str_n.count('1') == 0:
+                print(n, st_five[ost])
+                return True
+        m += 2
+    return False
+
+cnt = 0
+for i in range(100_000, 999_999):
+    if check_n(i):
+        cnt += 1
+    if cnt >= 7:
+        break
+'''
 '''
 def get_primes(n):
     a = [True] * (n+1)
