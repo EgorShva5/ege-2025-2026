@@ -1,5 +1,23 @@
+from re import compile
+
+r = compile('^3\d*2$')
+
+def cnt_of_dels(n):
+    dels = set()
+    for i in range(2,int(n**0.5)+1):
+        if n % i == 0: 
+            dels.add(i)
+            if i != n // i: dels.add(n//i)
+    return dels
+
+cnt = 0
+for i in range(0,10**6,1234):
+    if r.match(str(i)):
+            cnt += 1
+             
+print(cnt)
 #№ 29929 (Уровень: Средний)
-def get_primes(n):
+'''def get_primes(n):
     a = [True] * (n+1)
     a[0] = False
     a[1] = False
@@ -16,7 +34,7 @@ pr = get_primes(5_000)
 n = -1
 while True:
     if pr[n]*pr[n-1] > 
-print()
+print()'''
 
 #№ 29932 (Уровень: Базовый)
 '''def get_dels(n):

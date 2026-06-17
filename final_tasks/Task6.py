@@ -1,5 +1,76 @@
 from turtle import *
-import tkinter as tk
+
+'''tracer(0)
+screensize(5_000,5_000)
+m = 5
+
+for i in range(6):
+    fd(71*m)
+    rt(90)
+    fd(73*m)
+    rt(90)
+
+up()
+
+fd(18*m)
+rt(90)
+fd(22*m)
+lt(90)
+
+down()
+
+for i in range(6):
+    fd(45*m)
+    rt(90)
+    fd(58*m)
+    rt(90)
+cnt = 0
+
+up()
+for x in range(-100,100):
+    for y in range(-100,100):
+       goto(x*m,y*m)
+       dot(2, 'red')
+
+done()'''
+'''tracer(0)
+screensize(5_000, 5_000)
+m = 5
+
+begin_fill()
+rt(45)
+for i in range(3):
+    rt(45)
+    fd(10*m)
+    rt(45)
+
+rt(315)
+fd(10*m)
+rt(90)
+fd(20*m)
+rt(90)
+
+for i in range(2):
+    fd(10*m)
+    rt(90)
+
+end_fill()
+up()
+
+canvas = getcanvas()
+cnt = 0
+for x in range(-50,50):
+    for y in range(-50, 50):
+        if canvas.find_overlapping(x*m,y*m,x*m,y*m) == (5,):
+            cnt += 1
+        
+        goto(x*m, y*m)
+
+
+print(cnt)
+done()'''
+
+'''import tkinter as tk
 
 win = tk.Tk()
 cv1 = tk.Canvas(win, width=5000,height=500)
@@ -57,7 +128,7 @@ for x in range(-500,500):
             cnt+= 1
 print(cnt)
 
-done()
+done()'''
 
 '''tracer(0)
 screensize(5_000,5_000)

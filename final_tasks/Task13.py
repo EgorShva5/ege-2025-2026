@@ -1,5 +1,12 @@
 from ipaddress import *
 
+ip = ip_address('111.61.106.21')
+
+for mask in range(31):
+    net = ip_network(f'{ip}/{mask}', 0)
+    if net[0] < ip < net[-1]:
+        print(net, net.netmask)
+
 #№ 25141 (Уровень: Средний)
 '''
 net = ip_network('46.29.170.214/255.255.128.0',0)
